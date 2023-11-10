@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title> STUDENT APPLICATION</title>
+</head>
+<body style="color: white;background-color: hsl(174, 73%, 45%)">
+ <div class="container mt-5">
+    <div class="text-center">
+<h1 class="display-5 mb-5"><strong>STUDENT APPLICATION</strong> </h1>
+<style>
+.update{
+    background-color: hsla(0, 100%, 97%, 0.588);
+    width: 60%;
+    height: 25rem;
+    display: none;
+    flex-direction: column;
+    border-radius: 1rem; 
+    justify-content: center;
+    align-items: center;  
+    position: absolute;
+}
+.nk{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+.upd{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.bt{
+background-color: red;
+border: 0px;
+border-radius: 4px;
+color: #fff;
+width: 5rem;
+height: 2rem;
+}
+</style>
+<div class="update" id="upp">
+<button class="bt" id="clo" onclick="clos()">Close</button>
+<input type="text" class="nk" id="update1" placeholder="first name">
+<input type="text" class="nk" id="update2" placeholder="last name">
+<input type="text" class="nk" id="update3" placeholder="Enter Roll name">
+<button onclick="upst()" id="upd" class="upd">Update</button>
+
+</div>
+  </div> 
+      <div class="main row justify-content-center">
+          
+            <div class="col-8 col-md-8mb-3">
+                <label for="firstname">First Name</label>
+                <input class="form-control" id="First_Name" type="text" placeholder="Enter First name">
+            </div>
+
+            <div class="col-8 col-md-8 mb-3">
+                <label for="Last Name">Last Name</label>
+                <input class="form-control" id="Last_Name" type="text" placeholder="Enter Last name">
+            </div>
+
+            <div class="col-8 col-md-8 mb-3">
+                <label for="Roll No.">Roll no.</label>
+                <input class="form-control" id="Roll_no" type="text" placeholder="Enter Roll No.">
+            </div>
+
+            <div class="col-8 col-md-8">
+                
+                <button onclick="btn()">submit</button>
+                
+            </div>
+        
+            <div class="col-12  mt-5">
+               <table class="table table-striped table-dark">
+                <thead id="hh">
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Roll No.</th>
+                    <th>Actions</th>
+                </thead> 
+                <tbody id="student-list">
+                    
+            
+            </tbody>
+                        
+
+
+               </table>
+            </div>
+      </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
